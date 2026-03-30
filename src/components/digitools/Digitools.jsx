@@ -1,9 +1,13 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import DigitoolCard from './digitoolCard/DigitoolCard';
+import CartPage from './cartPage/CartPage';
 
-const DigitalTools = ({ digitoolsPromise }) => {
+const DigiTools = ({ digitoolsPromise, setIsCart, isCart }) => {
+
     const digitoolsData = use(digitoolsPromise)
-    console.log(digitoolsData);
+    const [activeTab, setActiveTab] = useState("products");
+
+
     return (
         <div className='container mx-auto py-15 px-3'>
             <section>
@@ -12,18 +16,37 @@ const DigitalTools = ({ digitoolsPromise }) => {
                     products designed <br></br> to boost your productivity and creativity.</p>
                 <div className='flex justify-center py-6'>
                     <div className='inline-flex items-center border border-gray-300 rounded-full gap-3 shadow-sm'>
-                        <button className='btn btn-success rounded-full'>Products</button>
-                        <button className='btn rounded-full'>Cart(2)</button>
+                        <button onClick={() => setActiveTab("products")}
+                            className={`btn rounded-full font-bold ${activeTab == "products" ? 'btn-success text-white' : ''}`}>
+                            Products
+                        </button>
+                        <button onClick={() => setActiveTab("cart")}
+                            className={`btn rounded-full font-bold ${activeTab == "cart" ? 'btn-success text-white' : ''}`}>
+                            Cart({isCart.length})
+                        </button>
                     </div>
                 </div>
             </section>
-            <section className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
-                {
-                    digitoolsData.map(digitoolData => <DigitoolCard key={digitoolData.id} digitoolData={digitoolData}></DigitoolCard>)
-                }
-            </section>
+
+            {activeTab == "products" ?
+                (<section className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                    {
+                        digitoolsData.map(digitoolData =>
+                            <DigitoolCard key={digitoolData.id}
+                                digitoolData={digitoolData}
+                                isCart={isCart}
+                                setIsCart={setIsCart}
+                            >
+                            </DigitoolCard>)
+                    }
+                </section>)
+                : <CartPage
+                    isCart={isCart}
+                    setIsCart={setIsCart}
+                ></CartPage>
+            }
         </div>
     );
 };
 
-export default DigitalTools;
+export default DigiTools;

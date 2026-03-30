@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const DigitoolCard = ({ digitoolData }) => {
-    console.log('digitoolData', digitoolData);
+const DigitoolCard = ({ digitoolData, isCart, setIsCart }) => {
+
+    const [cartItem, setCartItem] = useState(false)
+
+    const handleCartItems = () => {
+        setCartItem(true)
+        setIsCart(prev =>[...prev, digitoolData])
+    }
+
+
     return (
         <div className="card bg-base-100 shadow-md">
             <div className="card-body">
@@ -29,7 +37,8 @@ const DigitoolCard = ({ digitoolData }) => {
                     </li>
                 </ul>
                 <div className="mt-6">
-                    <button className="btn btn-primary btn-block rounded-full">Buy Now</button>
+                    <button onClick={() => handleCartItems()}
+                        className={`btn btn-block rounded-full ${cartItem ? 'btn-success' : 'btn-primary'}`}>{cartItem == true ? 'Added to cart' : 'Buy Now'}</button>
                 </div>
             </div>
         </div>
