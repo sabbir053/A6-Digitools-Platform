@@ -34,7 +34,6 @@ const DigiTools = ({ digitoolsPromise, setIsCart, isCart }) => {
                         digitoolsData.map(digitoolData =>
                             <DigitoolCard key={digitoolData.id}
                                 digitoolData={digitoolData}
-                                isCart={isCart}
                                 setIsCart={setIsCart}
                             >
                             </DigitoolCard>)

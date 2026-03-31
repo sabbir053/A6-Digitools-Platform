@@ -1,5 +1,6 @@
 import React from 'react';
 import Cart from './Cart';
+import { toast } from 'react-toastify';
 
 const CartPage = ({ isCart, setIsCart }) => {
 
@@ -7,6 +8,7 @@ const CartPage = ({ isCart, setIsCart }) => {
 
     const handleTotalCartItem = (isCart) => {
         setIsCart([])
+        toast.error(`All Items Removed Successful`)
     }
 
     return (

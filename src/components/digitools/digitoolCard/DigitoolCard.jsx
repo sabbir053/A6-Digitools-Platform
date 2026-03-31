@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
-const DigitoolCard = ({ digitoolData, isCart, setIsCart }) => {
+const DigitoolCard = ({ digitoolData, setIsCart }) => {
 
     const [cartItem, setCartItem] = useState(false)
 
     const handleCartItems = () => {
         setCartItem(true)
-        setIsCart(prev =>[...prev, digitoolData])
+        setIsCart(prev => [...prev, digitoolData])
+        toast.success(`Successfully Buying: ${digitoolData.name}`)
     }
-
 
     return (
         <div className="card bg-base-100 shadow-md">
