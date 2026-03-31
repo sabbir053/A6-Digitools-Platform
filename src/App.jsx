@@ -8,6 +8,7 @@ import Stats from './components/stats/Stats'
 import Steps from './components/steps/Steps'
 import Pricing from './components/pricing/Pricing'
 import Workflow from './components/workflow/Workflow'
+import Footer from './components/footer/Footer'
 
 
 const fetchDigitoolsData = async () => {
@@ -34,6 +35,7 @@ function App() {
       <Steps></Steps>
       <Pricing></Pricing>
       <Workflow></Workflow>
+      <Footer></Footer>
 
       {/* inpost toastify */}
       <ToastContainer />
