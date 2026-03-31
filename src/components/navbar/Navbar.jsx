@@ -19,7 +19,7 @@ const Navbar = ({ isCart }) => {
                             <li className='cursor-pointer bg-gray-100 p-2 rounded-md'>FAQ</li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Digitools</a>
+                    <a className="font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-xl">Digitools</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 space-x-8">

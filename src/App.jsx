@@ -5,6 +5,9 @@ import { Suspense, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
 import Hero from './components/hero/Hero'
 import Stats from './components/stats/Stats'
+import Steps from './components/steps/Steps'
+import Pricing from './components/pricing/Pricing'
+import Workflow from './components/workflow/Workflow'
 
 
 const fetchDigitoolsData = async () => {
@@ -28,7 +31,11 @@ function App() {
       </div>}>
         <Digitools isCart={isCart} setIsCart={setIsCart} digitoolsPromise={digitoolsPromise}></Digitools>
       </Suspense>
+      <Steps></Steps>
+      <Pricing></Pricing>
+      <Workflow></Workflow>
 
+      {/* inpost toastify */}
       <ToastContainer />
     </>
   )

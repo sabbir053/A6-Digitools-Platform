@@ -12,7 +12,7 @@ const Hero = () => {
                         New: AI-Powered Tools Available
                     </span>
                 </div>
-                <h1 className='text-4xl md:text-7xl font-bold'>Supercharge Your <br></br> Digital Workflow</h1>
+                <h1 className='text-4xl md:text-[50px] font-bold'>Supercharge Your <br></br> Digital Workflow</h1>
                 <p className='text-sm text-gray-400'>Access premium AI tools, design assets, templates, and productivity <br />
                     software—all in one place. Start creating faster today.
                     Explore Products
