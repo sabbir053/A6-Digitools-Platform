@@ -20,10 +20,10 @@ const CartPage = ({ isCart, setIsCart }) => {
                         <img
                             src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png"
                             alt="Empty Cart"
-                            className="w-40 h-40 mb-5 opacity-80"
+                            className="w-30 h-30 mb-5 opacity-80"
                         />
                         <h2 className="text-2xl font-bold text-gray-700">
-                            Card are not available now
+                            Cart are not available now
                         </h2>
                         <p className="text-gray-500 mt-2">
                             Please buy a Items in product tab

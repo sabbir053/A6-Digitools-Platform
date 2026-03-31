@@ -17,11 +17,11 @@ const DigiTools = ({ digitoolsPromise, setIsCart, isCart }) => {
                 <div className='flex justify-center py-6'>
                     <div className='inline-flex items-center border border-gray-300 rounded-full gap-3 shadow-sm'>
                         <button onClick={() => setActiveTab("products")}
-                            className={`btn rounded-full font-bold ${activeTab == "products" ? 'btn-success text-white' : ''}`}>
+                            className={`btn rounded-full font-bold ${activeTab == "products" ? 'text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]' : ''}`}>
                             Products
                         </button>
                         <button onClick={() => setActiveTab("cart")}
-                            className={`btn rounded-full font-bold ${activeTab == "cart" ? 'btn-success text-white' : ''}`}>
+                            className={`btn rounded-full font-bold ${activeTab == "cart" ? 'text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]' : ''}`}>
                             Cart({isCart.length})
                         </button>
                     </div>
