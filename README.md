@@ -1,16 +1,23 @@
-# React + Vite
+# Name of Your Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Digitools Platform
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Digitools Platform is a modern web-based application designed to provide useful digital tools in one place. It offers a clean and user-friendly interface where users can easily access different tools for daily productivity tasks such as calculations, utilities, and other smart features. The platform is built with a focus on speed, responsiveness, and simplicity to ensure a smooth user experience across all devices.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Tailwind CSS
+- Daisy UI
+- Toastify
+- React Icon
+- Daisy UI
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Modern and responsive user interface.
+- Fast and lightweight digital tools platform.
+- Easy navigation with clean design.
