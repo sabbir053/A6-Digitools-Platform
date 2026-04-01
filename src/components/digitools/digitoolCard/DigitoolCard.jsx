@@ -16,7 +16,19 @@ const DigitoolCard = ({ digitoolData, setIsCart }) => {
             <div className="card-body">
                 <div className='flex justify-between items-center'>
                     <img className='h-15' src={digitoolData.icon} alt="icon" />
-                    <span className="badge badge-xs badge-warning">{digitoolData.tag}</span>
+                    <span
+                        className={`badge badge-xs ${digitoolData.tag === 'New'
+                                ? 'badge-primary'
+                                : digitoolData.tag === 'Popular'
+                                    ? 'badge-info'
+                                    : digitoolData.tag === 'Best Seller'
+                                        ? 'badge-warning'
+                                        : 'badge-success'
+                            }`}
+                    >
+                        {digitoolData.tag}
+                    </span>
+                    {/* <span className={`badge badge-xs ${digitoolData.tag == 'new' ? 'badge-warning'? 'badge-info': 'badge-success'}`}>{digitoolData.tag}</span> */}
                 </div>
                 <div>
                     <h2 className="text-xl font-bold">{digitoolData.name}</h2>

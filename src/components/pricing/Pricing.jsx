@@ -115,7 +115,7 @@ const Pricing = () => {
                             </li>
                         </ul>
                         <div className="mt-6">
-                            <button className="btn btn-primary btn-block rounded-full">Contact Sales</button>
+                            <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-full">Contact Sales</button>
                         </div>
                     </div>
                 </div>

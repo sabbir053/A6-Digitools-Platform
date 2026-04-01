@@ -33,10 +33,10 @@ const Steps = () => {
                             <div class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-[#F3E8FF] mx-auto">
                                 <img src={packageImg} alt="package img" />
                             </div>
-                            <div class="text-center text-2xl">Create Account</div>
+                            <div class="text-center text-2xl">Choose Products</div>
                         </div>
 
-                        <dd class="mt-4 text-center text-base leading-7 text-gray-600">Sign up for free in seconds. No credit card required to get started.</dd>
+                        <dd class="mt-4 text-center text-base leading-7 text-gray-600">Browse our catalog and select the tools that fit your needs.</dd>
                     </div>
 
                     <div className="relative pl-16 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-gray-200">
@@ -46,13 +46,11 @@ const Steps = () => {
                             <div class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-[#F3E8FF] mx-auto">
                                 <img src={rocketImg} alt="rocket img" />
                             </div>
-                            <div class="text-center text-2xl">Create Account</div>
+                            <div class="text-center text-2xl">Start Creating</div>
                         </div>
 
-                        <dd class="mt-4 text-center text-base leading-7 text-gray-600">Sign up for free in seconds. No credit card required to get started.</dd>
+                        <dd class="mt-4 text-center text-base leading-7 text-gray-600">Download and start using your premium tools immediately.</dd>
                     </div>
-
-
                 </div>
             </div>
         </div>
