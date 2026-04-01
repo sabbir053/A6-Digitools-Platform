@@ -13,7 +13,7 @@ const CartPage = ({ isCart, setIsCart }) => {
 
     return (
         <div className='container mx-auto rounded-md shadow-md p-5 space-y-5 w-full my-5'>
-            <h2 className='text-lg font-bold'>Your Cart</h2>
+            <h2 className='text-2xl font-bold'>Your Cart</h2>
             {
                 isCart.length <= 0 ? (
                     <div className="flex flex-col items-center justify-center text-center py-10 p-6 border border-gray-200 shodow-sm rounded-md">
@@ -40,7 +40,7 @@ const CartPage = ({ isCart, setIsCart }) => {
                 <h3 className='text-lg font-bold'>Total</h3>
                 <h2 className='text-lg font-bold'>${total}</h2>
             </div>
-            <button onClick={() => handleTotalCartItem(isCart)} className='btn btn-info btn-block rounded-full font-bold'>Proceed to checkout</button>
+            <button onClick={() => handleTotalCartItem(isCart)} className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-full font-bold'>Proceed to checkout</button>
         </div>
     );
 };
