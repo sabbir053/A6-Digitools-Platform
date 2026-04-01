@@ -51,7 +51,7 @@ const DigitoolCard = ({ digitoolData, setIsCart }) => {
                 </ul>
                 <div className="mt-6">
                     <button onClick={() => handleCartItems()}
-                        className={`btn btn-block rounded-full ${cartItem ? 'btn-success' : 'btn-primary'}`}>{cartItem == true ? 'Added to cart' : 'Buy Now'}</button>
+                        className={`btn btn-block rounded-full ${cartItem ? 'btn-success' : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'}`}>{cartItem == true ? 'Added to cart' : 'Buy Now'}</button>
                 </div>
             </div>
         </div>
